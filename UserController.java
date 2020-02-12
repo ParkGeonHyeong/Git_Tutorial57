@@ -18,13 +18,20 @@ public class UserController{
     }
 
     //회원수정 페이지로 이동
-        @RequesetMapping("/user/modify.do")
+        @RequesetMapping("/user/update.do")
         public String modify(){
-            logger.info("경로 : modify
+            logger.info("경로 : update");
 
-            return "user/modify";
+            return "user/update";
     }
 
+    //회원삭제 페이지로 이동
+        @RequesetMapping("/user/delete.do")
+        public String delete(){
+            logger.info("경로 : delete");
+
+            return "user/delete";
+    }
 
 
 
