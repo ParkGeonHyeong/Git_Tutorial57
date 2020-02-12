@@ -17,6 +17,14 @@ public class UserController{
         return "user/insert";
     }
 
+    //회원수정 페이지로 이동
+        @RequesetMapping("/user/modify.do")
+        public String modify(){
+            logger.info("경로 : modify
+
+            return "user/modify";
+    }
+
 
 
 
